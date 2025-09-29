@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMate - Responsive E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🛒 ShopMate</div>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to ShopMate</h1>
+    <p>Best deals on your favorite products!</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <h2>Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://static1.xdaimages.com/wordpress/wp-content/uploads/wm/2024/06/surface-laptop-7-34.jpg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>$800</p>
+        <button onclick="addToCart('Laptop', 800)">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://cdn.pixabay.com/photo/2023/10/12/13/05/headphones-8310796_960_720.jpg" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>$120</p>
+        <button onclick="addToCart('Headphones', 120)">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP._OUGmfR8ctKJ0CWCrT41HAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p>$200</p>
+        <button onclick="addToCart('Smartwatch', 200)">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://www.dpreview.com/files/p/articles/6269402639/canon_eosr8.jpeg" alt="Camera">
+        <h3>Camera</h3>
+        <p>$500</p>
+        <button onclick="addToCart('Camera', 500)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div class="cart-items"></div>
+    <h3 class="total">Total: $0</h3>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopMate. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
